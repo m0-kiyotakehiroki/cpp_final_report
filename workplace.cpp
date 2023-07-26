@@ -171,7 +171,7 @@ void PrintMap(int n2) {    //双六マップの作製(動作確認済み)　n2�
 	}
 }
 
-int EVENT(int mapn) {
+int EVENT(int mapn) {//クイズを出すマスの処理
 	int a1 = 0;
 	int a2 = 0;
 	int a3 = 0;
@@ -234,7 +234,7 @@ int EVENT(int mapn) {
 	return a2;
 }
 
-int FinalEVENT(int number) {
+int FinalEVENT(int number) {//最終試練（動作確認済み）
 	int a3 = 0;
 	int a4 = 0;
 	int a5 = 0;
@@ -363,10 +363,10 @@ int main() {
 			p = 65;
 		}
 	}
-	if (p1 == 25) {
+	if (p1 == 25) {//ゲームオーバーの表示
 		cout << "ゲームオーバー\nまたトライしてね";
 	}
-	else {
+	else {//ゴール時の得点などの表示
 		p4 = lp * 10;
 		p3 += p4;
 		cout << "ゴール" << endl;
