@@ -50,7 +50,7 @@ void setquizNumber() {
 }
 
 void setquiz() {
-	ifstream datafile("quiz.dat");
+	ifstream datafile("quiz.dat");  //用いるDATファイルに応じて名前を書き換える
 	string quiz;
 	string choice;
 	int x;
@@ -213,7 +213,7 @@ int main() {
 	setquiz();  //クイズの設定
 	setquizNumber(); //クイズ管理箱の作成
 
-	cout << "タイムスリップ！日本史すごろくへようこそ！\n半角数字のみを入力し、入力が完了したらエンターキーを押してください。\n説明を見ますか？\n1.YES(見る)　　　　2.NO(見ない)" << endl;  //welcomeコメント
+	cout << "タイムスリップ！日本史すごろくへようこそ！\n半角数字のみを入力し、入力が完了したらエンターキーを押してください。\n説明を見ますか？\n1.YES(見る)　　　　2.NO(見ない)" << endl;  //welcomeコメント 必要に応じてゲームの名前を変える
 	cin >> p0;
 	if (p0 == 1) {//ルール説明
 		cout << "＜説明＞\n1.行動はサイコロを振るか１マス進むかから選べます。\n2.◇や☆マスにとまると、クイズが出題され、正解すると2～3マス進め、不正解だと1ターン余計に消費します。。" << endl;
